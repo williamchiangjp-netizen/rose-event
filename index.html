@@ -4,32 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="YWPf8rNIfij6NAMHu_zmBnpeLLA2M7CykYO6c4vyasw" />
-    <title>🌹 玫瑰守護神 - 唯覓文化情人節決選 | 官方應援入口</title>
-    <meta name="description" content="2026 玫瑰守護神決選！唯覓文化傳媒主辦，2/14-3/14 限時投票。立即點擊 bit.ly/tiktok-rose 進入線上直播應援。">
+    <title>🌹 玫瑰守護神決選 - 唯覓文化活動：維尼、溫度42度、亮金金、小楊店長、Sax維維官方直播應援</title>
+    <meta name="description" content="2026 玫瑰守護神決選盛大開跑！唯覓文化傳媒主辦，見證 維尼 WINNIE、溫度42度、亮金金、小楊店長、Sax維維 的耀眼時刻。立即進入線上直播間，感受守護的神聖力量。">
+    <meta name="keywords" content="玫瑰守護神, 唯覓文化, 維尼 WINNIE, 溫度42度, 亮金金, 小楊店長, Sax維維, 玫瑰守護神決選, 線上直播, 情人節活動, 唯覓文化傳媒有限公司">
+
     <style>
         :root { --tiktok-red: #ff3b5c; --tiktok-blue: #69c9d0; }
         body { margin: 0; background: #050505; color: #fff; font-family: 'PingFang TC', sans-serif; display: flex; flex-direction: column; align-items: center; min-height: 100vh; overflow: hidden; position: relative; }
-        
-        /* 背景畫布 */
         #bg-canvas { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1; }
-        /* 前景畫布 (在卡片之上) */
         #fg-canvas { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 100; }
-
         .container { z-index: 50; width: 90%; max-width: 450px; margin-top: 60px; text-align: center; }
-        
-        .main-card { background: rgba(15, 15, 15, 0.85); backdrop-filter: blur(20px); border: 1.5px solid rgba(255, 255, 255, 0.1); border-radius: 35px; padding: 45px 25px; box-shadow: 0 0 30px rgba(0,0,0,0.8); position: relative; overflow: hidden; }
-        .main-card::before { content: ""; position: absolute; top: -2px; left: -2px; right: -2px; bottom: -2px; background: linear-gradient(45deg, var(--tiktok-red), transparent, var(--tiktok-blue)); border-radius: 37px; z-index: -1; opacity: 0.4; }
-
+        .main-card { background: rgba(15, 15, 15, 0.85); backdrop-filter: blur(25px); border: 1.5px solid rgba(255, 255, 255, 0.1); border-radius: 35px; padding: 45px 25px; box-shadow: 0 0 30px rgba(0,0,0,0.8); position: relative; }
         h1 { font-size: 38px; margin: 10px 0; background: linear-gradient(to bottom, #fff, #ffcbd5); -webkit-background-clip: text; -webkit-text-fill-color: transparent; filter: drop-shadow(0 0 10px rgba(255,59,92,0.8)); font-weight: 900; }
-        
         .timer-box { background: rgba(255, 255, 255, 0.03); border-radius: 20px; padding: 18px; margin: 25px 0; border: 1px solid rgba(255,255,255,0.08); }
         #countdown { font-size: 26px; font-weight: bold; color: var(--tiktok-blue); text-shadow: 0 0 15px var(--tiktok-blue); }
+        .kol-list { color: #ffcbd5; font-size: 14px; margin-bottom: 25px; font-weight: bold; letter-spacing: 1px; }
+        
+        /* 這裡是紅框文字被移除後的樣式 */
+        .call-action { font-size: 16px; color: #bbb; line-height: 1.7; margin: 30px 0; }
 
-        .btn-link { display: block; background: linear-gradient(90deg, var(--tiktok-red), #ff2d78); color: white; text-decoration: none; padding: 22px; border-radius: 50px; font-size: 22px; font-weight: 900; margin: 35px 0 15px 0; box-shadow: 0 10px 25px rgba(255, 59, 92, 0.5); transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .btn-link { display: block; background: linear-gradient(90deg, var(--tiktok-red), #ff2d78); color: white; text-decoration: none; padding: 22px; border-radius: 50px; font-size: 22px; font-weight: 900; margin: 15px 0 15px 0; box-shadow: 0 10px 25px rgba(255, 59, 92, 0.5); transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
         .btn-link:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(255, 59, 92, 0.8); }
-
-        .info-tag { font-size: 13px; color: #888; letter-spacing: 2px; }
-        .seo-text { max-width: 500px; margin-top: 60px; padding: 30px 20px; font-size: 12px; color: #333; text-align: left; line-height: 1.8; z-index: 50; }
+        
+        .seo-text { max-width: 500px; margin-top: 60px; padding: 30px 20px; font-size: 12px; color: #333; text-align: left; line-height: 2; z-index: 50; }
+        .seo-text strong { color: #444; }
     </style>
 </head>
 <body>
@@ -39,30 +37,35 @@
     <div class="container">
         <div class="main-card">
             <div style="font-size: 60px; margin-bottom: 10px;">🌹</div>
-            <div class="info-tag">唯覓文化傳媒有限公司</div>
+            <div style="font-size: 13px; color: #888; letter-spacing: 2px;">唯覓文化傳媒有限公司</div>
             <h1>玫瑰守護神</h1>
-            <div style="color: var(--tiktok-blue); font-weight: bold;">情人節活動 · 最終決選</div>
+            
+            <div class="kol-list">
+                應援選手：維尼 | 溫度42度 | 亮金金<br>小楊店長 | Sax維維
+            </div>
             
             <div class="timer-box">
-                <div style="font-size: 14px; margin-bottom: 5px; color: #888;">距離應援結束還剩</div>
+                <div style="font-size: 14px; margin-bottom: 5px; color: #888;">距離 3/14 決選結束還剩</div>
                 <div id="countdown">載入中...</div>
             </div>
 
-            <p style="font-size: 16px; color: #bbb;">進入線上直播間，投票支持選手！<br>每一朵玫瑰，都是守護的力量。</p>
-            
-            <a href="https://webcast.tiktok.com/campaign/falcon/campaign/fusion_cosmic_runtime/pages/home/index.html?activityId=7605159099814349580&campaign_traffic_id=cptraffic010017sc1000000013424781316&enter_from=LINE&lang=zh-Hant-TW" class="btn-link">🔥 前往直播決選現場</a>
-            <div style="font-size: 10px; color: #444;">ID: 7605159099814349580</div>
+            <div class="call-action">
+                進入線上直播間，見證年度人氣王誕生！<br>
+                每一朵玫瑰，都是守護的神聖力量。
+            </div>
+
+            <a href="https://webcast.tiktok.com/campaign/falcon/campaign/fusion_cosmic_runtime/pages/home/index.html?activityId=7605159099814349580" class="btn-link">🔥 進入決選直播現場</a>
+            <div style="font-size: 10px; color: #444;">官方活動識別碼: 7605159099814349580</div>
         </div>
 
         <div class="seo-text">
-            <strong>玫瑰守護神關鍵字：</strong> 唯覓文化傳媒有限公司主辦，2月14日至3月14日玫瑰守護神決選。透過 bit.ly/tiktok-rose 參與線上直播應援。
+            <strong>玫瑰守護神決選活動內容：</strong> 本次由<strong>唯覓文化傳媒有限公司</strong>主辦的情人節特別企劃「玫瑰守護神」，活動期間為 2月14日 至 3月14日。參與決選的熱門創作者包含 維尼 WINNIE、溫度42度、亮金金、小楊店長、Sax維維。粉絲可透過 bit.ly/tiktok-rose 連結快速進入線上直播間，見證您支持的守護神選手榮耀時刻。
         </div>
     </div>
 
     <canvas id="fg-canvas"></canvas>
 
     <script>
-        // 倒數計時
         function updateTimer() {
             const target = new Date('2026/03/14 23:59:59').getTime();
             const now = new Date().getTime();
@@ -71,30 +74,23 @@
             const h = String(Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(2, '0');
             const m = String(Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
             const s = String(Math.floor((diff % (1000 * 60)) / 1000)).padStart(2, '0');
-            document.getElementById('countdown').innerHTML = diff > 0 ? `${d}天 ${h}:${m}:${s}` : "活動圓滿結束";
+            document.getElementById('countdown').innerHTML = diff > 0 ? `${d}天 ${h}:${m}:${s}` : "活動已圓滿結束";
         }
         setInterval(updateTimer, 1000); updateTimer();
 
-        // 3D 花瓣邏輯
         function createPetalSystem(canvasId, count, minSize, maxSize, speedMult) {
             const canvas = document.getElementById(canvasId);
             const ctx = canvas.getContext('2d');
             let width, height, petals = [];
-
             function init() {
                 width = canvas.width = window.innerWidth;
                 height = canvas.height = window.innerHeight;
                 petals = Array.from({length: count}, () => new Petal());
             }
-
             class Petal {
-                constructor() {
-                    this.reset();
-                    this.y = Math.random() * height; // 初始分佈
-                }
+                constructor() { this.reset(); this.y = Math.random() * height; }
                 reset() {
-                    this.x = Math.random() * width;
-                    this.y = -20;
+                    this.x = Math.random() * width; this.y = -20;
                     this.size = Math.random() * (maxSize - minSize) + minSize;
                     this.speedY = (Math.random() * 1.5 + 1) * speedMult;
                     this.speedX = Math.random() * 1 - 0.5;
@@ -104,40 +100,29 @@
                     this.spin = Math.random() * 2 - 1;
                 }
                 update() {
-                    this.y += this.speedY;
-                    this.x += this.speedX;
-                    this.flip += this.flipSpeed;
-                    this.angle += this.spin;
+                    this.y += this.speedY; this.x += this.speedX;
+                    this.flip += this.flipSpeed; this.angle += this.spin;
                     if (this.y > height + 20) this.reset();
                 }
                 draw() {
-                    ctx.save();
-                    ctx.translate(this.x, this.y);
+                    ctx.save(); ctx.translate(this.x, this.y);
                     ctx.rotate(this.angle * Math.PI / 180);
                     ctx.scale(1, Math.abs(Math.cos(this.flip)));
-                    ctx.beginPath();
-                    ctx.fillStyle = `hsl(${350 + Math.random()*10}, 80%, 50%)`;
-                    ctx.moveTo(0, 0);
-                    ctx.bezierCurveTo(this.size, -this.size, this.size, this.size, 0, this.size * 1.5);
+                    ctx.beginPath(); ctx.fillStyle = `hsl(${350 + Math.random()*10}, 80%, 50%)`;
+                    ctx.moveTo(0, 0); ctx.bezierCurveTo(this.size, -this.size, this.size, this.size, 0, this.size * 1.5);
                     ctx.bezierCurveTo(-this.size, this.size, -this.size, -this.size, 0, 0);
-                    ctx.fill();
-                    ctx.restore();
+                    ctx.fill(); ctx.restore();
                 }
             }
-
             function animate() {
                 ctx.clearRect(0, 0, width, height);
                 petals.forEach(p => { p.update(); p.draw(); });
                 requestAnimationFrame(animate);
             }
-            init(); animate();
-            window.addEventListener('resize', init);
+            init(); animate(); window.addEventListener('resize', init);
         }
-
-        // 啟動背景組 (數量多, 較小, 較慢)
         createPetalSystem('bg-canvas', 25, 5, 10, 0.8);
-        // 啟動前景組 (數量少, 較大, 較快, 會蓋在卡片上)
-        createPetalSystem('fg-canvas', 8, 12, 20, 1.2);
+        createPetalSystem('fg-canvas', 8, 12, 22, 1.2);
     </script>
 </body>
 </html>
