@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="YWPf8rNIfij6NAMHu_zmBnpeLLA2M7CykYO6c4vyasw" />
-    <title>🌹 玫瑰守護神 - 唯覓文化活動盛典：維尼、溫度42度、亮金金、小楊店長、Sax維維勝利揭曉</title>
-    <meta name="description" content="2026 玫瑰守護神活動進入最終揭曉時刻！唯覓文化傳媒主辦，誰將成為最終的人氣王？立即點擊 bit.ly/tiktok-rose 進入直播間見證 維尼、溫度42度、亮金金、小楊店長、Sax維維 的榮耀瞬間。">
-    <meta name="keywords" content="玫瑰守護神, 唯覓文化, 維尼 WINNIE, 溫度42度, 亮金金, 小楊店長, Sax維維, 玫瑰守護神揭曉, 線上直播, 唯覓文化傳媒有限公司">
+    <title>🌹 玫瑰守護神 - 優勝者即將揭曉！唯覓文化盛典：維尼、溫度42度、亮金金、小楊店長、Sax維維</title>
+    <meta name="description" content="2026 玫瑰守護神投票圓滿結束，優勝者即將於 3月14日 正式公佈！立即進入 bit.ly/tiktok-rose 直播間，與 維尼、溫度42度、亮金金、小楊店長、Sax維維 一同見證榮耀時刻。">
+    <meta name="keywords" content="玫瑰守護神, 唯覓文化, 優勝者公佈, 玫瑰守護神決選, 維尼 WINNIE, 溫度42度, 亮金金, 小楊店長, Sax維維, 3月14日">
 
     <style>
         :root { --tiktok-red: #ff3b5c; --tiktok-blue: #69c9d0; }
@@ -14,39 +14,64 @@
         #bg-canvas { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1; }
         #fg-canvas { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 100; }
         .container { z-index: 50; width: 90%; max-width: 450px; margin-top: 50px; text-align: center; }
-        .main-card { background: rgba(15, 15, 15, 0.85); backdrop-filter: blur(25px); border: 1.5px solid rgba(255, 255, 255, 0.1); border-radius: 35px; padding: 45px 25px; box-shadow: 0 0 30px rgba(255, 59, 92, 0.4); position: relative; overflow: hidden; }
-        .main-card::before { content: ""; position: absolute; top: -2px; left: -2px; right: -2px; bottom: -2px; background: linear-gradient(45deg, var(--tiktok-red), transparent, var(--tiktok-blue)); border-radius: 37px; z-index: -1; opacity: 0.6; }
-        h1 { font-size: 38px; margin: 10px 0; background: linear-gradient(to bottom, #fff, #ffcbd5); -webkit-background-clip: text; -webkit-text-fill-color: transparent; filter: drop-shadow(0 0 10px rgba(255,59,92,0.8)); font-weight: 900; }
-        .timer-box { background: rgba(255, 255, 255, 0.05); border-radius: 20px; padding: 18px; margin: 25px 0; border: 1px solid rgba(255,255,255,0.1); }
-        #countdown { font-size: 26px; font-weight: bold; color: var(--tiktok-blue); text-shadow: 0 0 15px var(--tiktok-blue); letter-spacing: 1px; }
-        .kol-list { color: #ffcbd5; font-size: 14px; margin-bottom: 20px; font-weight: bold; letter-spacing: 1px; line-height: 1.5; }
-        .btn-link { display: block; background: linear-gradient(90deg, var(--tiktok-red), #ff2d78); color: white; text-decoration: none; padding: 22px; border-radius: 50px; font-size: 22px; font-weight: 900; margin: 25px 0 15px 0; box-shadow: 0 10px 25px rgba(255, 59, 92, 0.5); transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-        .btn-link:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(255, 59, 92, 0.8); }
-        .seo-text { max-width: 500px; margin-top: 60px; padding: 30px 20px; font-size: 12px; color: #333; text-align: left; line-height: 1.8; z-index: 50; }
+        
+        .main-card { background: rgba(15, 15, 15, 0.88); backdrop-filter: blur(25px); border: 2px solid rgba(255, 255, 255, 0.1); border-radius: 35px; padding: 45px 25px; box-shadow: 0 0 40px rgba(255, 59, 92, 0.5); position: relative; overflow: hidden; }
+        .main-card::before { content: ""; position: absolute; top: -2px; left: -2px; right: -2px; bottom: -2px; background: linear-gradient(45deg, var(--tiktok-red), transparent, var(--tiktok-blue)); border-radius: 37px; z-index: -1; opacity: 0.7; animation: borderGlow 3s infinite alternate; }
+        @keyframes borderGlow { from { opacity: 0.4; } to { opacity: 0.8; } }
+
+        h1 { font-size: 38px; margin: 10px 0; background: linear-gradient(to bottom, #fff, #ffcbd5); -webkit-background-clip: text; -webkit-text-fill-color: transparent; filter: drop-shadow(0 0 12px rgba(255,59,92,0.9)); font-weight: 900; }
+        
+        .status-badge { display: inline-block; background: var(--tiktok-red); color: white; padding: 6px 18px; border-radius: 50px; font-size: 14px; font-weight: bold; margin-bottom: 15px; box-shadow: 0 0 15px rgba(255, 59, 92, 0.6); animation: shake 0.5s infinite; }
+        @keyframes shake { 0% { transform: rotate(0); } 25% { transform: rotate(2deg); } 75% { transform: rotate(-2deg); } 100% { transform: rotate(0); } }
+
+        .timer-box { background: rgba(255, 59, 92, 0.1); border-radius: 20px; padding: 20px; margin: 25px 0; border: 1px solid rgba(255, 59, 92, 0.3); }
+        #countdown { font-size: 28px; font-weight: bold; color: #fff; text-shadow: 0 0 10px var(--tiktok-red); letter-spacing: 2px; }
+
+        .kol-list { color: #ffcbd5; font-size: 15px; margin-bottom: 25px; font-weight: bold; letter-spacing: 1px; line-height: 1.6; }
+        
+        .call-action { font-size: 17px; color: #eee; line-height: 1.7; margin: 30px 0; font-weight: 500; }
+
+        .btn-link { display: block; background: linear-gradient(90deg, var(--tiktok-red), #ff2d78); color: white; text-decoration: none; padding: 22px; border-radius: 50px; font-size: 22px; font-weight: 900; margin: 15px 0 15px 0; box-shadow: 0 10px 25px rgba(255, 59, 92, 0.6); transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); text-transform: uppercase; }
+        .btn-link:hover { transform: translateY(-10px) scale(1.02); box-shadow: 0 20px 45px rgba(255, 59, 92, 0.9); }
+        
+        .seo-text { max-width: 500px; margin-top: 60px; padding: 30px 20px; font-size: 12px; color: #333; text-align: left; line-height: 2; z-index: 50; }
     </style>
 </head>
 <body>
+
     <canvas id="bg-canvas"></canvas>
+    
     <div class="container">
         <div class="main-card">
-            <div style="font-size: 60px; margin-bottom: 10px; filter: drop-shadow(0 0 10px rgba(255,255,255,0.2));">🏆</div>
+            <div class="status-badge">🔥 投票結束 · 優勝者即將揭曉 🔥</div>
+            <div style="font-size: 60px; margin-bottom: 10px;">🏆</div>
             <div style="font-size: 13px; color: #888; letter-spacing: 2px;">唯覓文化傳媒有限公司</div>
             <h1>玫瑰守護神</h1>
+            
             <div class="kol-list">
-                應援選手：維尼 | 溫度42度 | 亮金金<br>小楊店長 | Sax維維
+                決選創作者：維尼 | 溫度42度 | 亮金金<br>小楊店長 | Sax維維
             </div>
+            
             <div class="timer-box">
-                <div style="font-size: 14px; margin-bottom: 7px; color: #ccc; font-weight: bold;">🔥 距離勝利者揭曉還剩 🔥</div>
+                <div style="font-size: 15px; margin-bottom: 8px; color: #ffcbd5; font-weight: bold;">距離 3/14 最終優勝者揭曉還剩</div>
                 <div id="countdown">載入中...</div>
             </div>
-            <p style="font-size: 16px; color: #ddd; line-height: 1.6;">活動圓滿結束，感謝熱情支持！<br>立即進入直播間，見證最終榮耀時刻。</p>
-            <a href="https://webcast.tiktok.com/campaign/falcon/campaign/fusion_cosmic_runtime/pages/home/index.html?activityId=7605159099814349580" class="btn-link">🚀 進入直播見證榮耀</a>
-            <div style="font-size: 10px; color: #444;">ID: 7605159099814349580</div>
+
+            <div class="call-action">
+                感謝萬名粉絲熱情支持！投票已圓滿結束。<br>
+                誰將奪得 2026 年度玫瑰守護神寶座？<br>
+                3月14日 直播間，邀您共同見證。
+            </div>
+
+            <a href="https://webcast.tiktok.com/campaign/falcon/campaign/fusion_cosmic_runtime/pages/home/index.html?activityId=7605159099814349580" class="btn-link">🚀 進入直播間等待揭曉</a>
+            <div style="font-size: 10px; color: #444;">官方活動 ID: 7605159099814349580</div>
         </div>
+
         <div class="seo-text">
-            <strong>玫瑰守護神決選活動內容：</strong> 本次由<strong>唯覓文化傳媒有限公司</strong>主辦的情人節特別企劃「玫瑰守護神」已進入最終成果揭曉。參與選手包含 <strong>維尼 WINNIE、溫度42度、亮金金、小楊店長、Sax維維</strong>。粉絲可透過 bit.ly/tiktok-rose 連結快速進入線上直播間。
+            <strong>玫瑰守護神活動決選：</strong> 由<strong>唯覓文化傳媒有限公司</strong>主辦的情人節盛典「玫瑰守護神」投票已於近日結束。<strong>優勝者將於 3月14日 正式揭曉</strong>。參與創作者包含 <strong>維尼 WINNIE、溫度42度、亮金金、小楊店長、Sax維維</strong>。請透過 bit.ly/tiktok-rose 連結進入線上直播間觀看結果。
         </div>
     </div>
+
     <canvas id="fg-canvas"></canvas>
 
     <script>
@@ -58,7 +83,7 @@
             const h = String(Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(2, '0');
             const m = String(Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
             const s = String(Math.floor((diff % (1000 * 60)) / 1000)).padStart(2, '0');
-            document.getElementById('countdown').innerHTML = diff > 0 ? `${d}天 ${h}:${m}:${s}` : "🏆 勝利者已正式揭曉 🏆";
+            document.getElementById('countdown').innerHTML = diff > 0 ? `${d}天 ${h}:${m}:${s}` : "🏆 優勝者揭曉盛典進行中 🏆";
         }
         setInterval(updateTimer, 1000); updateTimer();
 
@@ -76,12 +101,12 @@
                 reset() {
                     this.x = Math.random() * width; this.y = -20;
                     this.size = Math.random() * (maxSize - minSize) + minSize;
-                    this.speedY = (Math.random() * 1.5 + 1.2) * speedMult;
-                    this.speedX = Math.random() * 1.5 - 0.75;
+                    this.speedY = (Math.random() * 1.5 + 1.5) * speedMult;
+                    this.speedX = Math.random() * 2 - 1;
                     this.flip = Math.random() * Math.PI;
-                    this.flipSpeed = Math.random() * 0.04 + 0.02;
+                    this.flipSpeed = Math.random() * 0.05 + 0.02;
                     this.angle = Math.random() * 360;
-                    this.spin = Math.random() * 3 - 1.5;
+                    this.spin = Math.random() * 4 - 2;
                 }
                 update() {
                     this.y += this.speedY; this.x += this.speedX;
@@ -92,7 +117,7 @@
                     ctx.save(); ctx.translate(this.x, this.y);
                     ctx.rotate(this.angle * Math.PI / 180);
                     ctx.scale(1, Math.abs(Math.cos(this.flip)));
-                    ctx.beginPath(); ctx.fillStyle = `hsl(${350 + Math.random()*10}, 85%, 55%)`;
+                    ctx.beginPath(); ctx.fillStyle = `hsl(${350 + Math.random()*10}, 90%, 60%)`;
                     ctx.moveTo(0, 0); ctx.bezierCurveTo(this.size, -this.size, this.size, this.size, 0, this.size * 1.5);
                     ctx.bezierCurveTo(-this.size, this.size, -this.size, -this.size, 0, 0);
                     ctx.fill(); ctx.restore();
@@ -105,8 +130,8 @@
             }
             init(); animate(); window.addEventListener('resize', init);
         }
-        createPetalSystem('bg-canvas', 25, 5, 10, 0.9);
-        createPetalSystem('fg-canvas', 8, 12, 22, 1.3);
+        createPetalSystem('bg-canvas', 30, 5, 12, 0.9);
+        createPetalSystem('fg-canvas', 10, 15, 25, 1.4);
     </script>
 </body>
 </html>
