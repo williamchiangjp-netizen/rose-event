@@ -5,25 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="YWPf8rNIfij6NAMHu_zmBnpeLLA2M7CykYO6c4vyasw" />
     
-    <title>🌹 玫瑰守護神 - 唯覓文化情人節活動盛典：維尼、溫度42度、亮金金、小楊店長、Sax維維精采重溫</title>
-    
-    <meta name="description" content="2026 玫瑰守護神活動圓滿落幕！感謝所有粉絲對 唯覓文化傳媒有限公司 的支持。立即進入頻道重溫 維尼 WINNIE、溫度42度、亮金金、小楊店長、Sax維維 的精采表現。">
-    <meta name="keywords" content="玫瑰守護神, 唯覓文化, 維尼 WINNIE, 溫度42度, 亮金金, 小楊店長, Sax維維, 情人節活動, 唯覓文化傳媒有限公司, 線上直播">
+    <title>🌹 玫瑰守護神 - 唯覓文化情人節活動盛典：維尼、溫度42度、亮金金、小楊店長、Sax維維官方重溫</title>
+    <meta name="description" content="2026 玫瑰守護神活動盛典圓滿落幕！感謝所有粉絲對 唯覓文化傳媒有限公司 的支持。立即進入頻道重溫 維尼 WINNIE、溫度42度、亮金金、小楊店長、Sax維維 的精采守護時刻。">
+    <meta name="keywords" content="玫瑰守護神, 唯覓文化, 維尼 WINNIE, 溫度42度, 亮金金, 小楊店長, Sax維維, 情人節活動, 唯覓文化傳媒有限公司">
 
     <style>
         :root { --tiktok-red: #ff3b5c; --tiktok-blue: #69c9d0; }
         body { margin: 0; background: #050505; color: #fff; font-family: 'PingFang TC', sans-serif; display: flex; flex-direction: column; align-items: center; min-height: 100vh; overflow: hidden; position: relative; }
+        
         #bg-canvas { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1; }
         #fg-canvas { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 100; }
+
         .container { z-index: 50; width: 90%; max-width: 450px; margin-top: 60px; text-align: center; }
-        .main-card { background: rgba(15, 15, 15, 0.85); backdrop-filter: blur(25px); border: 1.5px solid rgba(255, 255, 255, 0.1); border-radius: 35px; padding: 45px 25px; box-shadow: 0 0 30px rgba(0,0,0,0.8); position: relative; }
+        
+        /* 保持華麗的霓虹卡片 */
+        .main-card { background: rgba(15, 15, 15, 0.85); backdrop-filter: blur(25px); border: 1.5px solid rgba(255, 255, 255, 0.1); border-radius: 35px; padding: 45px 25px; box-shadow: 0 0 30px rgba(255, 59, 92, 0.3); position: relative; overflow: hidden; }
+        .main-card::before { content: ""; position: absolute; top: -2px; left: -2px; right: -2px; bottom: -2px; background: linear-gradient(45deg, var(--tiktok-red), transparent, var(--tiktok-blue)); border-radius: 37px; z-index: -1; opacity: 0.5; }
+
         h1 { font-size: 38px; margin: 10px 0; background: linear-gradient(to bottom, #fff, #ffcbd5); -webkit-background-clip: text; -webkit-text-fill-color: transparent; filter: drop-shadow(0 0 10px rgba(255,59,92,0.8)); font-weight: 900; }
-        .kol-list { color: #ffcbd5; font-size: 14px; margin-bottom: 25px; font-weight: bold; letter-spacing: 1px; line-height: 1.5; }
-        .status-tag { display: inline-block; background: rgba(255, 255, 255, 0.1); padding: 5px 15px; border-radius: 20px; font-size: 12px; color: #aaa; margin-bottom: 15px; border: 1px solid rgba(255,255,255,0.1); }
-        .call-action { font-size: 16px; color: #bbb; line-height: 1.7; margin: 30px 0; }
-        .btn-link { display: block; background: linear-gradient(90deg, #444, #222); color: white; text-decoration: none; padding: 22px; border-radius: 50px; font-size: 20px; font-weight: 900; margin: 15px 0 15px 0; box-shadow: 0 10px 20px rgba(0,0,0,0.5); transition: 0.3s; }
-        .btn-link:hover { transform: translateY(-5px); background: linear-gradient(90deg, #555, #333); }
-        .seo-text { max-width: 500px; margin-top: 60px; padding: 30px 20px; font-size: 12px; color: #333; text-align: left; line-height: 2; z-index: 50; }
+        
+        .status-badge { display: inline-block; background: linear-gradient(90deg, var(--tiktok-red), var(--tiktok-blue)); padding: 6px 20px; border-radius: 50px; font-size: 14px; font-weight: bold; margin-bottom: 20px; box-shadow: 0 0 15px rgba(255, 59, 92, 0.4); }
+
+        .kol-list { color: #ffcbd5; font-size: 15px; margin-bottom: 25px; font-weight: bold; letter-spacing: 1px; line-height: 1.6; text-shadow: 0 0 5px rgba(105, 201, 208, 0.5); }
+        
+        .call-action { font-size: 16px; color: #ddd; line-height: 1.7; margin: 30px 0; }
+
+        /* 回復活力亮紅色的按鈕 */
+        .btn-link { display: block; background: linear-gradient(90deg, var(--tiktok-red), #ff2d78); color: white; text-decoration: none; padding: 22px; border-radius: 50px; font-size: 22px; font-weight: 900; margin: 15px 0 15px 0; box-shadow: 0 10px 25px rgba(255, 59, 92, 0.5); transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .btn-link:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(255, 59, 92, 0.8); }
+
+        .info-tag { font-size: 13px; color: #888; letter-spacing: 2px; margin-bottom: 5px; }
+        .seo-text { max-width: 500px; margin-top: 60px; padding: 30px 20px; font-size: 12px; color: #333; text-align: left; line-height: 1.8; z-index: 50; }
     </style>
 </head>
 <body>
@@ -32,27 +44,27 @@
     
     <div class="container">
         <div class="main-card">
-            <div class="status-tag">活動已圓滿結束</div>
-            <div style="font-size: 50px; margin-bottom: 10px;">🌹</div>
-            <div style="font-size: 13px; color: #888; letter-spacing: 2px;">唯覓文化傳媒有限公司</div>
+            <div class="status-badge">✨ 活動圓滿盛典 ✨</div>
+            <div style="font-size: 60px; margin-bottom: 10px;">🌹</div>
+            <div class="info-tag">唯覓文化傳媒有限公司</div>
             <h1>玫瑰守護神</h1>
             
             <div class="kol-list">
-                參與創作者：維尼 | 溫度42度 | 亮金金<br>小楊店長 | Sax維維
+                人氣創作者：維尼 | 溫度42度 | 亮金金<br>小楊店長 | Sax維維
             </div>
             
             <div class="call-action">
-                感謝大家在情人節期間的熱情支持！<br>
-                活動已圓滿落幕，立即進入官方頻道<br>
-                重溫所有守護神的精采時刻。
+                感謝粉絲在情人節期間的熱情支持！<br>
+                2026 玫瑰守護神盛典已圓滿落幕<br>
+                立即進入官方頻道，重溫精采守護時刻。
             </div>
 
-            <a href="https://webcast.tiktok.com/campaign/falcon/campaign/fusion_cosmic_runtime/pages/home/index.html?activityId=7605159099814349580" class="btn-link">進入官方活動存檔</a>
-            <div style="font-size: 10px; color: #444;">官方活動識別碼: 7605159099814349580</div>
+            <a href="https://webcast.tiktok.com/campaign/falcon/campaign/fusion_cosmic_runtime/pages/home/index.html?activityId=7605159099814349580" class="btn-link">🔥 重溫盛典精采內容</a>
+            <div style="font-size: 10px; color: #444;">官方活動 ID: 7605159099814349580</div>
         </div>
 
         <div class="seo-text">
-            <strong>玫瑰守護神活動回顧：</strong> 由<strong>唯覓文化傳媒有限公司</strong>主辦的情人節特別企劃「玫瑰守護神」已於 3月14日 圓滿結束。感謝 <strong>維尼 WINNIE、溫度42度、亮金金、小楊店長、Sax維維</strong> 等多位創作者的精采參與。粉絲仍可透過 bit.ly/tiktok-rose 連結訪問活動存檔頁面。
+            <strong>玫瑰守護神活動盛典回顧：</strong> 本次由<strong>唯覓文化傳媒有限公司</strong>主辦的情人節特別企劃「玫瑰守護神」已圓滿結束。感謝 <strong>維尼 WINNIE、溫度42度、亮金金、小楊店長、Sax維維</strong> 等知名網紅的熱情參與。歡迎透過 bit.ly/tiktok-rose 連結訪問官方活動存檔。
         </div>
     </div>
 
@@ -73,12 +85,12 @@
                 reset() {
                     this.x = Math.random() * width; this.y = -20;
                     this.size = Math.random() * (maxSize - minSize) + minSize;
-                    this.speedY = (Math.random() * 1.5 + 1) * speedMult;
-                    this.speedX = Math.random() * 1 - 0.5;
+                    this.speedY = (Math.random() * 1.5 + 1.2) * speedMult; // 恢復輕快下落速度
+                    this.speedX = Math.random() * 1.5 - 0.75;
                     this.flip = Math.random() * Math.PI;
-                    this.flipSpeed = Math.random() * 0.03 + 0.01;
+                    this.flipSpeed = Math.random() * 0.04 + 0.02;
                     this.angle = Math.random() * 360;
-                    this.spin = Math.random() * 2 - 1;
+                    this.spin = Math.random() * 3 - 1.5;
                 }
                 update() {
                     this.y += this.speedY; this.x += this.speedX;
@@ -89,7 +101,8 @@
                     ctx.save(); ctx.translate(this.x, this.y);
                     ctx.rotate(this.angle * Math.PI / 180);
                     ctx.scale(1, Math.abs(Math.cos(this.flip)));
-                    ctx.beginPath(); ctx.fillStyle = `hsl(${350 + Math.random()*10}, 80%, 45%)`;
+                    ctx.beginPath(); 
+                    ctx.fillStyle = `hsl(${350 + Math.random()*10}, 85%, 55%)`; // 顏色調回鮮豔紅
                     ctx.moveTo(0, 0); ctx.bezierCurveTo(this.size, -this.size, this.size, this.size, 0, this.size * 1.5);
                     ctx.bezierCurveTo(-this.size, this.size, -this.size, -this.size, 0, 0);
                     ctx.fill(); ctx.restore();
@@ -102,8 +115,8 @@
             }
             init(); animate(); window.addEventListener('resize', init);
         }
-        createPetalSystem('bg-canvas', 20, 5, 10, 0.6); // 稍微調慢花瓣速度，增加回顧的平靜感
-        createPetalSystem('fg-canvas', 5, 12, 22, 1.0);
+        createPetalSystem('bg-canvas', 25, 5, 10, 0.9);
+        createPetalSystem('fg-canvas', 8, 12, 22, 1.3);
     </script>
 </body>
 </html>
